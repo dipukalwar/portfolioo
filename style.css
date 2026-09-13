@@ -160,7 +160,7 @@ h1,h2,h3,.logo{
     font-size: 0.85rem;
     font-weight: 700;
     text-decoration: none;
-    transition: transform 0.2s ease, bacckground 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-live{
@@ -185,4 +185,54 @@ h1,h2,h3,.logo{
     transform: translateY(-2px);
     background-color: var(--bg-sky);
     color: var(--text-muted);
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.skill-category{
+    background: var(--card-bg);
+    border: 2px solid var(--border-blue);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(147, 197, 253, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-category:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(147, 197, 253, 0.35);
+}
+
+.category-title{
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.skill-pills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-pill{
+    background: var(--bg-sky);
+    color: var(--text-muted);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border-blue);
+    transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease ;
+}
+
+.skill-pill:hover{
+    background-color: var(--accent-yellow);
+    color: #854d0e;
+    transform: scale(1.08);
 }
