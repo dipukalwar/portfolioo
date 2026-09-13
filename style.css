@@ -236,3 +236,15 @@ h1,h2,h3,.logo{
     color: #854d0e;
     transform: scale(1.08);
 }
+
+.footer{
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px 20px;
+    border-top: 2px dashed var(--border-blue);
+}
+
+.footer a{
+    color: var(--text-muted);
+    font-weight: 700;
+}
