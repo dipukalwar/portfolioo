@@ -1,5 +1,56 @@
 :root{
     --bg-sky:#e0f2fe;
-    --card-blue:#ffffff;
-    
+    --card-bg:#ffffff;
+    --primary-blue:#93c5fd;
+    --accent-yellow:#fef08a;
+    --text-dark:#1e3a8a;
+    --text-muted:#2563eb;
+    --border-blue:#bfdbfe;
+}
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-sky);
+    color:var(--text-dark);
+    font-family: 'Quicksand',sans-serif;
+    line-height: 1.6;
+}
+
+h1,h2,h3,.logo{
+    font-family: 'Fredoka',sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.9);
+    border:2px solid var(--border-blue);
+    border-radius: 999px;
+}
+
+.logo{
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+}
+
+.nav-links{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 700;
 }
